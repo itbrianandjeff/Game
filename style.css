@@ -58,3 +58,8 @@ body {
   left: 67px;
   
 }
+
+#instructions {
+  background-image: url("instructions.png");
+
+}

@@ -65,4 +65,8 @@ background-position: bottom center;
   background-size: 95%;
 }
 
+#back {
+  position: absolute;
+  left: 100px;
+}
 

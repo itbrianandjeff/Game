@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-color: black;
 	font-family: monospace;
+  background-image: url("img/titlescreen.png");
 
 }
 
@@ -58,11 +59,9 @@ background-position: bottom center;
   
 }
 
-#titlescreen {
-  background-image: url("img/titlescreen.png");
-}
+
 #instructionsBody {
   background-image: url("img/instructions.png");
-
+}
 
 

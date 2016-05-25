@@ -9,15 +9,20 @@ $(document).keydown(function(e) {
 
 //move up
   case 38:
-    $(player).animate({top: "-=40px"}, 'fast');
+    $(player).animate({top: "-=25px"}, 'fast');
     break;
 
     //move down
   case 40:
-    $(player).animate({top: "+=40px"}, 'fast');
+    $(player).animate({top: "+=25px"}, 'fast');
     break;
 }; 
 
 });
+
+$("#button").click(function(){
+	$("#titlescreen").hide();
+	});
+
 
 });

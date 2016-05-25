@@ -21,7 +21,7 @@ $(document).keydown(function(e) {
 });
 
 $("#button").click(function(){
-	$("#titlescreen").hide();
+	$("body").toggle();
 	});
 
 

@@ -68,5 +68,6 @@ background-position: bottom center;
 #back {
   position: absolute;
   left: 100px;
+  bottom: 300px;
 }
 

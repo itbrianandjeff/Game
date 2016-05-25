@@ -58,12 +58,11 @@ background-position: bottom center;
   
 }
 
-<<<<<<< Updated upstream
+#titlescreen {
+  background-image: url("img/titlescreen.png");
+}
 #instructionsBody {
   background-image: url("img/instructions.png");
-=======
-#titlescreen {
-background-image: url("img/titlescreen.png");
->>>>>>> Stashed changes
 
-}
+
+

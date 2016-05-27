@@ -89,7 +89,7 @@ height: 100%;
 }
 
 
- a.instructionsbutton:hover {
+ a#instructionsbutton:hover {
     background-color: #383838;
     color: #abc;
   }

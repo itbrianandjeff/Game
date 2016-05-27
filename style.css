@@ -73,6 +73,7 @@ height: 100%;
   bottom: 150px;
 }
 
+<<<<<<< Updated upstream
 
 #instructionsbutton {
   border: 5px solid #383838;
@@ -93,3 +94,19 @@ height: 100%;
     background-color: #383838;
     color: #abc;
   }
+=======
+=======
+#explore
+>>>>>>> Stashed changes
+
+.arrow{
+   background-color:red;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;  
+  position: relative;
+  top: 400px;
+  left: 67px;
+}
+>>>>>>> Stashed changes

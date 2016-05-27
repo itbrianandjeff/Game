@@ -74,6 +74,15 @@ height: 100%;
   width: 
 }
 
-=======
-#explore
->>>>>>> Stashed changes
+
+#instructionsbutton {
+  border: 5px solid #383838;
+    color: #383838;
+    padding: 20px 50px;
+    font-size: 5em;
+    text-decoration: none;
+    background-color: #abc;
+    box-shadow: 3px 3px 3px #555;
+    position: relative;
+    top:150px;
+}

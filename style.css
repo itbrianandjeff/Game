@@ -67,7 +67,12 @@ height: 100%;
 }
 
 <<<<<<< Updated upstream
-
+#back {
+  position: absolute;
+  left: 10000px;
+  bottom: 10000px;
+  width: 
+}
 
 =======
 #explore

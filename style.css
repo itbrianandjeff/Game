@@ -69,9 +69,8 @@ height: 100%;
 
 #back {
   position: absolute;
-  left: 800px;
+  left: 900px;
   bottom: 500px;
-  width: 
 }
 
 
@@ -85,6 +84,7 @@ height: 100%;
     position: relative;
     top:350px;
     height: 50px;
-    font-size: 350%;
+    font-size: 400%;
     font-family: monospace;
+
 }

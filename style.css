@@ -87,3 +87,9 @@ height: 100%;
     font-family: monospace;
 
 }
+
+
+ a.instructionsbutton:hover {
+    background-color: #383838;
+    color: #abc;
+  }

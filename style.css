@@ -85,5 +85,6 @@ height: 100%;
     position: relative;
     top:350px;
     height: 50px;
-    font-size: 70%;
+    font-size: 150%;
+    font-family: monospace;
 }

@@ -82,7 +82,8 @@ var BackgroundScroll = function(params) {
 };
 
 
-
+var scroll = new BackgroundScroll();
+scroll.init();
 
 
 

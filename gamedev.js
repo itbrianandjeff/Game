@@ -54,6 +54,37 @@ var health = 1;
     });
   }, 200); //this is how often it c
 
+//#b blocks scrolling
+var BackgroundScroll = function(params) {
+  params = $.extend({
+    scrollSpeed: 7.2,
+    imageWidth: $('#b').width(),
+    imageHeight: $('#b').height()
+  }, params);
+  
+  var step = 1,
+    current = 0,
+    restartPosition = - (params.imageWidth - params.imageHeight);
+  
+  var scroll = function() {
+    current -= step;
+    if (current == restartPosition){
+      current = 0;
+    } 
+    $('#b').css('backgroundPosition', current + 'px 0');
+  
+  };
+  
+  this.init = function() {
+    setInterval(scroll, params.scrollSpeed);
+  
+  };
+};
+var scroll = new BackgroundScroll();
+scroll.init();
+
+
+
 
 
 }); 

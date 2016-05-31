@@ -19,9 +19,7 @@ $(document).keydown(function(e) {
 }; 
 
 });
-
-
-var health === 1
+var health = 1;
  function collision($div1, $div2) {
     var x1 = $div1.offset().left;
     var y1 = $div1.offset().top;
@@ -44,17 +42,20 @@ var health === 1
     //function that makes the magic happen! Below, jQuery prints the word "FALSE" into #results
    
     //IMPORTANT!!! Below declares the class of divs that your sprite collides with!!
-    $.each($('.arrow'), function() {
+    $.each($('. arrow'), function() {
       if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
         //if #myCar hits .othercar, then #results will say "TRUE"
-        var health === 0
+        health == 0;
         
 
         //all the actions that happen during a collision go here
 
       }
     });
-  }, 200); //this is how often it checks for a collision
+  }, 200); //this is how often it c
+
+
+
 }); 
 
 

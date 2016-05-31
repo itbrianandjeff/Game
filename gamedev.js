@@ -20,6 +20,8 @@ $(document).keydown(function(e) {
 
 });
 
+
+var health === 1
  function collision($div1, $div2) {
     var x1 = $div1.offset().left;
     var y1 = $div1.offset().top;
@@ -45,6 +47,7 @@ $(document).keydown(function(e) {
     $.each($('.arrow'), function() {
       if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
         //if #myCar hits .othercar, then #results will say "TRUE"
+        var health === 0
         
 
         //all the actions that happen during a collision go here
@@ -52,8 +55,7 @@ $(document).keydown(function(e) {
       }
     });
   }, 200); //this is how often it checks for a collision
-
-}); //document.ready ends - do not delete!!!
+}); 
 
 
 

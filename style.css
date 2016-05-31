@@ -120,3 +120,14 @@ height: 100%;
     bottom: 35px;
 }
 
+
+#b2 {
+    width: 15000px;
+    height: 25px;
+    background-image: url("img/block.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    right: 8px;
+    top: 400px;
+}

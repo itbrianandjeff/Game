@@ -80,8 +80,47 @@ var BackgroundScroll = function(params) {
   
   };
 };
+
+
+
+
+
+
+//#b2 blocks scrolling
+var BackgroundScroll = function(params) {
+  params = $.extend({
+    scrollSpeed: 7.2,
+    imageWidth: $('#b2').width(),
+    imageHeight: $('#b2').height()
+  }, params);
+  
+  var step = 1,
+    current = 0,
+    restartPosition = - (params.imageWidth - params.imageHeight);
+  
+  var scroll = function() {
+    current -= step;
+    if (current == restartPosition){
+      current = 0;
+    } 
+    $('#b2').css('backgroundPosition', current + 'px 0');
+  
+  };
+  
+  this.init = function() {
+    setInterval(scroll, params.scrollSpeed);
+  
+  };
+};
+
+
+
 var scroll = new BackgroundScroll();
 scroll.init();
+
+
+
+
 
 
 

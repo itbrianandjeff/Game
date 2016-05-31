@@ -42,7 +42,7 @@ var health = 1;
     //function that makes the magic happen! Below, jQuery prints the word "FALSE" into #results
    
     //IMPORTANT!!! Below declares the class of divs that your sprite collides with!!
-    $.each($('. arrow'), function() {
+    $.each($('.arrow'), function() {
       if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
         //if #myCar hits .othercar, then #results will say "TRUE"
         health == 0;

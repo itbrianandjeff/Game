@@ -97,10 +97,7 @@ height: 100%;
 
 
 .arrow{
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;  
-  position: relative;
+
    background-image: url("img/arrow.png");
 
 }

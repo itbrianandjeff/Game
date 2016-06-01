@@ -97,7 +97,14 @@ height: 100%;
 
 
 #arrow{
-   background-image: url("img/arrow.png");
+    width: 15000px;
+    height: 25px;
+    background-image: url("img/arrow.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    right: 8px;
+    bottom: 35px;
 
 }
 

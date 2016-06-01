@@ -96,11 +96,16 @@ height: 100%;
 
 
 
-.arrow{
-
+#arrow{
    background-image: url("img/arrow.png");
 
 }
+
+.block {
+  background-image: url("img/arrow.png");
+}
+
+
 
 #b {
     width: 15000px;

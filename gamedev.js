@@ -140,7 +140,7 @@ var BackgroundScroll = function(params) {
     if (current == restartPosition){
       current = 0;
     } 
-    $('#arrow').css('backgroundPosition', current + 'px 2');
+    $('#arrow').css('backgroundPosition', current + 'px 0');
   
   };
   

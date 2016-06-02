@@ -136,7 +136,7 @@ var BackgroundScroll = function(params) {
     restartPosition = - (params.imageWidth - params.imageHeight);
   
   var scroll = function() {
-    current -= step;
+    current = step;
     if (current == restartPosition){
       current = 0;
     } 

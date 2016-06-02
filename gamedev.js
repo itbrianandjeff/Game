@@ -122,10 +122,11 @@ scroll.init();
 
 
 
+
 //#arrow scrolling
 var BackgroundScroll = function(params) {
   params = $.extend({
-    scrollSpeed: 7.2,
+    scrollSpeed: 1,
     imageWidth: $('#arrow').width(),
     imageHeight: $('#arrow').height()
   }, params);

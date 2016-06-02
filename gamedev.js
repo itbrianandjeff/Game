@@ -155,30 +155,6 @@ var scroll = new BackgroundScroll();
 scroll.init();
 
 
-   function starline() {
-          var element = $('<div class="star s' + speed + '"></div>').appendTo($starfield);
-          var tl = new TimelineMax({
-              repeat: -1
-            }),
-            x = Math.floor(Math.random() * width * 2) + 1,
-            count = 0;
-
-          tl.set(element, {
-            y: -60,
-            x: x
-          }).to(element, speed, {
-            y: height,
-            x: x - width / 1.5,
-            ease: Linear.easeNone
-          }, Math.random() * 10);
-
-        };
-
-        randomizer();
-        starline();
-      }
-
-    }
 
 
 

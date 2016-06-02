@@ -115,6 +115,40 @@ var BackgroundScroll = function(params) {
 };
 
 
+var scroll = new BackgroundScroll();
+scroll.init();
+
+
+
+
+
+//#arrow scrolling
+var BackgroundScroll = function(params) {
+  params = $.extend({
+    scrollSpeed: 7.2,
+    imageWidth: $('#arrow').width(),
+    imageHeight: $('#arrow').height()
+  }, params);
+  
+  var step = 1,
+    current = 0,
+    restartPosition = - (params.imageWidth - params.imageHeight);
+  
+  var scroll = function() {
+    current -= step;
+    if (current == restartPosition){
+      current = 0;
+    } 
+    $('#arrow').css('backgroundPosition', current + 'px 0');
+  
+  };
+  
+  this.init = function() {
+    setInterval(scroll, params.scrollSpeed);
+  
+  };
+};
+
 
 var scroll = new BackgroundScroll();
 scroll.init();

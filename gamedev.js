@@ -7,15 +7,18 @@ $(document).keydown(function(e) {
   $(player).keydown;
   switch(e.which) {
 
-//move up
-  case 38:
-    $(player).animate({top: "-=25px"}, 'fast');
-    break;
-
-    //move down
-  case 40:
-    $(player).animate({top: "+=25px"}, 'fast');
-    break;
+case 65:
+                    playerX = playerX - 10 // MOVE LEFT
+                    break;
+                case 38:
+                    playerY = playerY - 10 // MOVE UP
+                    break;
+                case 68:
+                    playerX = playerX + 15 // MOVE RIGHT
+                    break;
+                case 40:
+                    playerY = playerY + 10 // MOVE DOWN
+                    break;
 }; 
 
 });

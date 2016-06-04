@@ -45,7 +45,7 @@ var health = 1;
     $.each($('#arrow, #b2, #b'),  function() {
       if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
         //if #myCar hits .othercar, then #results will say "TRUE"
-     $("#player, #arrow, #b").hide();
+     $("#player, #arrow, #b, #b2").hide();
      $("#lose").show();
         
 

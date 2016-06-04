@@ -46,6 +46,7 @@ var health = 1;
       if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
         //if #myCar hits .othercar, then #results will say "TRUE"
      $("#player, #arrow, #b, #b2").hide();
+     $("#lose").show();
         
 
         //all the actions that happen during a collision go here

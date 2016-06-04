@@ -143,15 +143,11 @@ overflow: hidden;
 
 
 
-.star {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/442915/star_copy.png');
-  background-size:cover;
-  background-position: center;
-  z-index: -1;
-  position: absolute;
-  opacity: 1;
+
+#lose{
+  background-image: url("img/lose.png")
+}
 
 
-#Lose{
-  background-image: url()
+
 

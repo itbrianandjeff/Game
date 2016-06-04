@@ -162,6 +162,7 @@ scroll.init();
 
 
 
+}); 
 
   var starNumber = 50;
 
@@ -213,7 +214,6 @@ scroll.init();
 
 
 
-}); 
 
 
 

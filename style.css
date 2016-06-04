@@ -141,12 +141,8 @@ overflow: hidden;
     top: 700px;
 }
 
-<<<<<<< Updated upstream
 
 
-
-<<<<<<< HEAD
-=======
 .star {
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/442915/star_copy.png');
   background-size:cover;
@@ -154,21 +150,8 @@ overflow: hidden;
   z-index: -1;
   position: absolute;
   opacity: 1;
-  &.s6 {
-    width: 20px;
-    height: 20px;
-  }
-  &.s4 {
-    width: 40px;
-    height: 40px;
-  }
-  &.s2 {
-    width: 60px;
-    height: 60px;
-  }
-=======
+
+
 #Lose{
   background-image: url()
->>>>>>> Stashed changes
-}
->>>>>>> origin/master
+

@@ -188,7 +188,7 @@ scroll.init();
         };
 
         function starline() {
-          var element = $('<div class="star s' + speed + '"></div>').appendTo($starfield);
+          var element = $('.star').appendTo($starfield);
           var tl = new TimelineMax({
               repeat: -1
             }),
@@ -214,6 +214,7 @@ scroll.init();
 
 
 
+}); 
 
 
 

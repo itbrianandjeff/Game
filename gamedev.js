@@ -151,7 +151,103 @@ function makeNewPosition(){
 function animateDiv(){
     var newq = makeNewPosition();
   //James change .a to .othercar
-    $('#aa, #ab, #ac, #ad, #ae').animate({ top: newq[0], left: newq[1] }, function(){
+    $('#aa').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    
+};
+
+ animateDiv();
+
+function makeNewPosition1(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() ;
+    var w = $(window).width() ;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv1(){
+    var newq = makeNewPosition();
+  //James change .a to .othercar
+    $('#ab').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    
+};
+
+ animateDiv();
+
+function makeNewPosition2(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() ;
+    var w = $(window).width() ;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv2(){
+    var newq = makeNewPosition();
+  //James change .a to .othercar
+    $('#ac').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    
+};
+
+ animateDiv();
+
+function makeNewPosition3(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() ;
+    var w = $(window).width() ;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv3(){
+    var newq = makeNewPosition();
+  //James change .a to .othercar
+    $('#ad').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    
+};
+
+ animateDiv();
+
+function makeNewPosition4(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() ;
+    var w = $(window).width() ;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv4(){
+    var newq = makeNewPosition();
+  //James change .a to .othercar
+    $('#ae').animate({ top: newq[0], left: newq[1] }, function(){
       animateDiv();        
     });
     

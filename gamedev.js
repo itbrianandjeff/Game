@@ -151,7 +151,7 @@ function makeNewPosition(){
 function animateDiv(){
     var newq = makeNewPosition();
   //James change .a to .othercar
-    $('.arrow').animate({ top: newq[0], left: newq[1] }, function(){
+    $('#aa, #ab, #ac, #ad, #ae').animate({ top: newq[0], left: newq[1] }, function(){
       animateDiv();        
     });
     

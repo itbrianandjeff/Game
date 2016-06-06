@@ -101,7 +101,7 @@ overflow: hidden;
 
 
 
-#arrow{
+.arrow{
     width: 5000px;
     height: 25px;
     background-image: url("img/arrow.png");

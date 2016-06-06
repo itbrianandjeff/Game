@@ -133,8 +133,8 @@ scroll.init();
 var BackgroundScroll = function(params) {
   params = $.extend({
     scrollSpeed: 1,
-    imageWidth: $('#arrow').width(),
-    imageHeight: $('#arrow').height()
+    imageWidth: $('.arrow').width(),
+    imageHeight: $('.arrow').height()
   }, params);
   
   var step = 1,
@@ -146,7 +146,7 @@ var BackgroundScroll = function(params) {
     if (current == restartPosition){
       current = 0;
     } 
-    $('#arrow').css('backgroundPosition', current + 'px 0');
+    $('.arrow').css('backgroundPosition', current + 'px 0');
   
   };
   

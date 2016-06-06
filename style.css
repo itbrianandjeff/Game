@@ -61,7 +61,7 @@ overflow: hidden;
   border-radius: 5px;  
   position: relative;
   top: 200px;
-  left: 67px;
+  left: 200px;
   
 }
 
@@ -102,7 +102,7 @@ overflow: hidden;
 
 
 .arrow{
-    width: 5000px;
+    width: 100px;
     height: 25px;
     background-image: url("img/arrow.png");
     background-size: contain;

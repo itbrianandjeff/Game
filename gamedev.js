@@ -42,10 +42,10 @@ var health = 1;
     //function that makes the magic happen! Below, jQuery prints the word "FALSE" into #results
    
     //IMPORTANT!!! Below declares the class of divs that your sprite collides with!!
-    $.each($('#arrow, #b2, #b'),  function() {
+    $.each($('.arrow, #b2, #b'),  function() {
       if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
         //if #myCar hits .othercar, then #results will say "TRUE"
-     $("#player, #arrow, #b, #b2").hide();
+     $("#player, .arrow, #b, #b2").hide();
      $("#lose").show();
 
    }
@@ -130,39 +130,37 @@ scroll.init();
 
 
 //#arrow scrolling
-var BackgroundScroll = function(params) {
-  params = $.extend({
-    scrollSpeed: 1,
-    imageWidth: $('.arrow').width(),
-    imageHeight: $('.arrow').height()
-  }, params);
-  
-  var step = 1,
-    current = 0,
-    restartPosition = - (params.imageWidth - params.imageHeight);
-  
-  var scroll = function() {
-    current -= step;
-    if (current == restartPosition){
-      current = 0;
-    } 
-    $('.arrow').css('backgroundPosition', current + 'px 0');
-  
-  };
-  
-  this.init = function() {
-    setInterval(scroll, params.scrollSpeed);
-  
-  };
+
+
+
+    animateDiv();
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() ;
+    var w = $(window).width() ;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+  //James change .a to .othercar
+    $('.arrow').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    
 };
 
 
-var scroll = new BackgroundScroll();
-scroll.init();
-
-
-
 }); 
+
+
 
  
 

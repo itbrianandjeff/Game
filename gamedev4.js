@@ -15,7 +15,7 @@ var onPlatform = true;
 // This function runs when the page is loaded
 $(document).ready(function(e) {
   // Put the player in the top/middle of the screen
-  $("#player").css("top", "448px").css("left", "387.5px");
+  $("#player").css("top", "15px").css("left", "387.5px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
   playerMaxTop = $("#stage4").height() - $("#player").height();
@@ -82,7 +82,7 @@ function update() {
 
     if (collisionBetween(p, $("#goal4"))) {
     clearInterval(timer);
-    alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore2.html");
+    alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore4.html");
 
 
 }
@@ -94,6 +94,16 @@ function update() {
     clearInterval(timer);
     alert("You lose!");
   }
+
+  if (collisionBetween(p, $("#lavablocks4a"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+
+
+
+
 
 
   // MOVEMENT HANDLING

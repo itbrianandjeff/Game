@@ -90,7 +90,7 @@ function update() {
 
   
 
-  if (collisionBetween(p, $("#lava3, .lavablock"))) {
+  if (collisionBetween(p, $("#lava3"))) {
     clearInterval(timer);
     alert("You lose!");
   }

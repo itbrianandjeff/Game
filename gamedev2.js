@@ -95,7 +95,12 @@ function update() {
     alert("You lose!");
   }
 
-  if (collisionBetween(p, $(".lavablock"))) {
+  if (collisionBetween(p, $("#lavablocks2a"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks2b"))) {
     clearInterval(timer);
     alert("You lose!");
   }

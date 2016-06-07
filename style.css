@@ -253,13 +253,13 @@ overflow: hidden;
 
 
 #stage2 {
- position: absolute;
+ position: fixed;
  background-color: #0066ff;
  margin: auto;
  width: 800px;
  height: 600px;
  overflow: hidden;
- z-index: -5;
+ z-index: -1;
 }
 #player2 {
  background-color: red;

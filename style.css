@@ -304,8 +304,8 @@ overflow: hidden;
   z-index: 5;
 }
 #plat4b {
-  top: 180px;
-  left: 370px;
+  top: 170px;
+  left: 400px;
   width: 30px;
   z-index: 5;
 }
@@ -315,12 +315,7 @@ overflow: hidden;
   width: 30px;
   z-index: 5;
 }
-#plat6b {
-  top: 125px;
-  left: 600px;
-  width: 100px;
-  z-index: 5;
-}
+
 #plat7b {
   top: 50px;
   left: 85px;

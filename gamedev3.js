@@ -82,7 +82,7 @@ function update() {
 
     if (collisionBetween(p, $("#goal3"))) {
     clearInterval(timer);
-    alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore3.html");
+    alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore4.html");
 
 
 }

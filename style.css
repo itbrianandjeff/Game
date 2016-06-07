@@ -565,3 +565,90 @@ overflow: hidden;
 
 
 
+
+
+
+
+
+
+
+
+
+#stage4 {
+ position: relative;
+ background-color: #002b80;
+ margin: auto;
+ width: 800px;
+ height: 600px;
+ overflow: hidden;
+}
+
+.platform4 {
+  position: relative;
+  height: 2px;
+  background-color: #600;
+}
+.onPlatform4 {
+  background-color: green;
+}
+#ground4 {
+  top: 60px;
+  left: 375px;
+  width: 50px;
+  z-index: 5;
+}
+#plat1d {
+  top: 90px;
+  left: 50px;
+  width: 170px;
+  z-index: 5;
+}
+#plat2d {
+  top: 300px;
+  left: 45px;
+  width: 650px;
+  z-index: 5;
+}
+#plat3d {
+  top: 500px;
+  left: 300px;
+  width: 400px;
+  z-index: 5;
+}
+
+#goal4 {
+  position: absolute;
+  top: 450px;
+  left: 140px;
+  width: 25px;
+  height: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 5;
+
+}
+
+#lava4 {
+  position: absolute;
+  background-image: url("img/lava.png");
+  width: 800px;
+  height: 45px;
+  top: 555px;
+
+}
+
+
+
+
+#lavablocks4a {
+  position: relative;
+  top: 30px;
+  left: 290px;
+}
+
+
+
+
+
+
+

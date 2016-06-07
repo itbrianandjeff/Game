@@ -259,7 +259,7 @@ overflow: hidden;
  width: 800px;
  height: 600px;
  overflow: hidden;
- z-index: -1;
+ z-index: -5;
 }
 #player2 {
  background-color: red;

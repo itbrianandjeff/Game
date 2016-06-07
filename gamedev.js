@@ -1,3 +1,7 @@
+$(document).ready(function(){
+
+    
+//Your jquery goes here
 // Variables needed for game
 var LEFT = 65,  UP = 87,  RIGHT = 68; // WASD
 var velocity = 0; // Player speed; +ve is down -ve is up

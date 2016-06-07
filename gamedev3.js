@@ -150,6 +150,21 @@ if (collisionBetween(p, $("#lavablocks3i"))) {
     alert("You lose!");
   }
 
+  if (collisionBetween(p, $("#lavablocks3l"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks3m"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks3n"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
 
 
 

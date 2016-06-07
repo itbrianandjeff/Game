@@ -15,7 +15,7 @@ var onPlatform = true;
 // This function runs when the page is loaded
 $(document).ready(function(e) {
   // Put the player in the top/middle of the screen
-  $("#player").css("top", "60px").css("left", "387.5px");
+  $("#player").css("top", "448px").css("left", "387.5px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
   playerMaxTop = $("#stage3").height() - $("#player").height();
@@ -80,7 +80,7 @@ function update() {
 
 
 
-    if (collisionBetween(p, $("#goal3"))) {
+    if (collisionBetween(p, $("#goal2"))) {
     clearInterval(timer);
     alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore3.html");
 
@@ -90,7 +90,7 @@ function update() {
 
   
 
-  if (collisionBetween(p, $("#lava3"))) {
+  if (collisionBetween(p, $("#lava2"))) {
     clearInterval(timer);
     alert("You lose!");
   }
@@ -104,87 +104,6 @@ function update() {
     clearInterval(timer);
     alert("You lose!");
   }
-
-  if (collisionBetween(p, $("#lavablocks3c"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3d"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3e"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3f"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3g"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3h"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3i"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("lavablocks3j"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3k"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3l"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3m"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3n"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3o"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3p"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3q"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks3r"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
 
 
 

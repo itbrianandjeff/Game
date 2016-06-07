@@ -79,6 +79,13 @@ function update() {
     clearInterval(timer);
     alert("You win!");
   }
+
+  if (collisionBetween(p, $("#lava"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+
   // MOVEMENT HANDLING
   if (jumpPressed) {
     jump();

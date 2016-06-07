@@ -76,7 +76,7 @@ function update() {
   }
   // GETTING THE GOAL
   if (collisionBetween(p, $("#goal"))) {
-    $("#player, #stage").hide();
+
   }
 
   if (collisionBetween(p, $("#lava"))) {

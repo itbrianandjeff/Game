@@ -75,10 +75,22 @@ function update() {
     });
   }
   // GETTING THE GOAL
-  if (collisionBetween(p, $("#goal"))) {
-    $("#player").css("top", "448px").css("left", "387.5px");
+
+
+
+  function goal() {
+
+    if (collisionBetween(p, $("#goal"))) {
+    $("#next").show()
 
   }
+
+    else {
+      $("next").hide()
+    }
+
+  }
+  
 
   if (collisionBetween(p, $("#lava"))) {
     clearInterval(timer);

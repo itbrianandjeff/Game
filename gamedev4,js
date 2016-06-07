@@ -80,25 +80,7 @@ function update() {
 
 
 
-    if (collisionBetween(p, $("#goal4"))) {
-    clearInterval(timer);
-    alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore4.html");
-
-
-}
-
-
-  
-
-  if (collisionBetween(p, $("#lava4"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
-
-  if (collisionBetween(p, $("#lavablocks4a"))) {
-    clearInterval(timer);
-    alert("You lose!");
-  }
+   
 
   
 

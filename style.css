@@ -327,7 +327,7 @@ overflow: hidden;
   width: 100px;
   z-index: 5;
 }
-#goalb {
+#goal2 {
   position: absolute;
   top: 25px;
   left: 200px;
@@ -338,7 +338,7 @@ overflow: hidden;
   z-index: 5;
 }
 
-#lavab {
+#lava2 {
   position: absolute;
   background-image: url("img/lava.png");
   width: 800px;

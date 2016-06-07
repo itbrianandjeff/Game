@@ -110,6 +110,11 @@ function update() {
     alert("You lose!");
   }
 
+  if (collisionBetween(p, $("#lavablocks3d"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
 
 
 

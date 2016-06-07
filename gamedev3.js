@@ -125,6 +125,15 @@ function update() {
     alert("You lose!");
   }
 
+  if (collisionBetween(p, $("#lavablocks3g"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks3h"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
 
 
 

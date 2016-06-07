@@ -101,7 +101,7 @@ overflow: hidden;
 
 
 
-#aa{
+.arrow{
     width: 100px;
     height: 25px;
     background-image: url("img/arrow.png");
@@ -113,52 +113,7 @@ overflow: hidden;
 }
 
 
-#ab{
-    width: 100px;
-    height: 25px;
-    background-image: url("img/arrow.png");
-    background-size: contain;
-    position: relative;
-    right: 8px;
-    bottom: 35px;
 
-}
-
-
-#ac{
-    width: 100px;
-    height: 25px;
-    background-image: url("img/arrow.png");
-    background-size: contain;
-    position: relative;
-    right: 8px;
-    bottom: 35px;
-
-}
-
-
-#ad{
-    width: 100px;
-    height: 25px;
-    background-image: url("img/arrow.png");
-    background-size: contain;
-    position: relative;
-    right: 8px;
-    bottom: 35px;
-
-}
-
-
-#ae{
-    width: 100px;
-    height: 25px;
-    background-image: url("img/arrow.png");
-    background-size: contain;
-    position: relative;
-    right: 8px;
-    bottom: 35px;
-
-}
 
 .block {
   background-image: url("img/arrow.png");

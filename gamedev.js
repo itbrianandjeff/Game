@@ -78,12 +78,12 @@ function update() {
 
 
 
-  function goal() {
+
 
     if (collisionBetween(p, $("#goal"))) {
     $("#next").show()
 
-  }
+
 
     else {
       $("next").hide()

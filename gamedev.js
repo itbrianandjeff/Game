@@ -1,137 +1,97 @@
-$(document).ready(function(){
+// Variables needed for game
+var LEFT = 65,  UP = 87,  RIGHT = 68; // WASD
+var velocity = 0; // Player speed; +ve is down -ve is up
+var gravity = 1; // Gravity amount
+var playerMaxTop; // The top pixel when player hits ground
+var timer; // The timer that controls the animation
+var leftPressed = false, rightPressed = false, jumpPressed = false; // keys pressed down
+var speed = 5; // left/right speed
+var onPlatform = true;
 
-    
-//Your jquery goes here
-var player = $("#player");
-
-$(document).keydown(function(e) {
-  $(player).keydown;
-  switch(e.which) {
-
-//move up
-  case 38:
-    $(player).animate({top: "-=25px"}, 'fast');
-    break;
-
-    //move down
-  case 40:
-    $(player).animate({top: "+=25px"}, 'fast');
-    break;
-}; 
-
+// This function runs when the page is loaded
+$(document).ready(function(e) {
+  // Put the player in the top/middle of the screen
+  $("#player").css("top", "448px").css("left", "100px");
+  // Calculate the player's "ground" position, which is the 
+  // height of the stage minus the height of the player
+  playerMaxTop = $("#stage").height() - $("#player").height();
+  // Start the timer
+  timer = setInterval(update, 25);
+  // Listen for keypresses
+  $(document).keydown(function(e) {
+    // If the spacebar is pressed, jump!
+    if (e.which === UP) {
+      jumpPressed = true;
+    } else if (e.which === RIGHT) {
+      rightPressed = true;
+    } else if (e.which === LEFT) {
+      leftPressed = true;
+    }
+  });
+  $(document).keyup(function(e) {
+    if (e.which === UP) {
+      jumpPressed = false;
+    } else if (e.which === RIGHT) {
+      rightPressed = false;
+    } else if (e.which === LEFT) {
+      leftPressed = false;
+    }
+  });
 });
-var health = 1;
- function collision($div1, $div2) {
-    var x1 = $div1.offset().left;
-    var y1 = $div1.offset().top;
-    var h1 = $div1.outerHeight(true);
-    var w1 = $div1.outerWidth(true);
-    var b1 = y1 + h1;
-    var r1 = x1 + w1;
-    var x2 = $div2.offset().left;
-    var y2 = $div2.offset().top;
-    var h2 = $div2.outerHeight(true);
-    var w2 = $div2.outerWidth(true);
-    var b2 = y2 + h2;
-    var r2 = x2 + w2;
-    //below is an if statement - if the variables calculate to the right formula, it will return true or false
-    if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
-    return true;
+
+// Make the player jump (or not if they shouldn't)
+function jump() {
+  // If the player is on the ground, allow jumping
+  if (onPlatform) {
+    // Set the strength of the jump; -ve values mean up
+    velocity = -15;
+    onPlatform = false;
+  }
+};
+
+// This function controls the animation
+function update() {
+  var p = $("#player"); // store player jQuery object in a variable for convenience
+  // JUMP HANDLING
+  if (!onPlatform) {
+    // Update velocity if the player is in the air
+    velocity += gravity;
+    // Move player according to the new velocity
+    var newPos = p.position().top + velocity + "px";
+    p.css("top", newPos);
+  }
+  if (velocity >= 0) { // only detect platforms when falling
+    onPlatform = false;
+    $(".platform").each(function(index) {
+      if (collisionBetween($(this), p) && p.position().top <= $(this).position().top) {
+        p.css('top', $(this).position().top - p.height() + "px");
+        onPlatform = true; // set player on a platform so that he can jump
+        velocity = 0;
+      }
+    });
+  }
+  // GETTING THE GOAL
+  if (collisionBetween(p, $("#goal"))) {
+    clearInterval(timer);
+    alert("You win!");
+  }
+  // MOVEMENT HANDLING
+  if (jumpPressed) {
+    jump();
+  }
+  // If the player goes left and is not on the left border allow moving
+  if (leftPressed) {
+    p.css("left", Math.max(0, p.position().left - speed) + "px");
+  }
+  // If the player goes right and is not on the right border allow moving
+  if (rightPressed) {
+    p.css("left", Math.min(p.position().left + speed, $("#stage").width() - p.width()) + "px");
   }
 
-  window.setInterval(function() {
-    //function that makes the magic happen! Below, jQuery prints the word "FALSE" into #results
-   
-    //IMPORTANT!!! Below declares the class of divs that your sprite collides with!!
-    $.each($('.arrow, #b2, #b'),  function() {
-      if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
-        //if #myCar hits .othercar, then #results will say "TRUE"
-     $("#player, .arrow, #b, #b2").hide();
-     $("#lose").show();
-
-   }
-
-      else {
-        $("#lose").hide();
-      }
-
-        //all the actions that happen during a collision go here
-
-      
-    });
-  }, 200); //this is how often it c
-
-//#b blocks scrolling
-var BackgroundScroll = function(params) {
-  params = $.extend({
-    scrollSpeed: 7.2,
-    imageWidth: $('#b').width(),
-    imageHeight: $('#b').height()
-  }, params);
-  
-  var step = 1,
-    current = 0,
-    restartPosition = - (params.imageWidth - params.imageHeight);
-  
-  var scroll = function() {
-    current -= step;
-    if (current == restartPosition){
-      current = 0;
-    } 
-    $('#b').css('backgroundPosition', current + 'px 0');
-  
-  };
-  
-  this.init = function() {
-    setInterval(scroll, params.scrollSpeed);
-  
-  };
 };
 
-
-var scroll = new BackgroundScroll();
-scroll.init();
-
-
-
-//#b2 blocks scrolling
-var BackgroundScroll = function(params) {
-  params = $.extend({
-    scrollSpeed: 7.2,
-    imageWidth: $('#b2').width(),
-    imageHeight: $('#b2').height()
-  }, params);
-  
-  var step = 1,
-    current = 0,
-    restartPosition = - (params.imageWidth - params.imageHeight);
-  
-  var scroll = function() {
-    current -= step;
-    if (current == restartPosition){
-      current = 0;
-    } 
-    $('#b2').css('backgroundPosition', current + 'px 0');
-  
-  };
-  
-  this.init = function() {
-    setInterval(scroll, params.scrollSpeed);
-  
-  };
-};
-
-
-var scroll = new BackgroundScroll();
-scroll.init();
-
-
-
-
-
-
-//#arrow scrolling
-
-
-
-
+function collisionBetween(a, b) {
+  var pos1 = $(a).position();
+  var pos2 = $(b).position();
+  return !(pos1.left > pos2.left + $(b).width() || pos2.left > pos1.left + $(a).width() || pos1.top > pos2.top + $(b).height() || pos2.top > pos1.top + $(a).height());
+}

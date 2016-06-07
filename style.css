@@ -187,41 +187,49 @@ overflow: hidden;
   top: 448px;
   left: 250px;
   width: 300px;
+  z-index: 5;
 }
 #plat1 {
   top: 375px;
   left: 150px;
   width: 100px;
+  z-index: 5;
 }
 #plat2 {
   top: 300px;
   left: 350px;
   width: 100px;
+  z-index: 5;
 }
 #plat3 {
   top: 275px;
   left: 200px;
   width: 100px;
+  z-index: 5;
 }
 #plat4 {
   top: 190px;
   left: 75px;
   width: 100px;
+  z-index: 5;
 }
 #plat5 {
   top: 175px;
   left: 450px;
   width: 100px;
+  z-index: 5;
 }
 #plat6 {
   top: 125px;
   left: 600px;
   width: 100px;
+  z-index: 5;
 }
 #plat7 {
   top: 75px;
   left: 150px;
   width: 100px;
+  z-index: 5;
 }
 #goal {
   position: absolute;
@@ -231,6 +239,7 @@ overflow: hidden;
   height: 25px;
   background-color: yellow;
   border-radius: 50%;
+  z-index: 5;
 }
 
 #lava {
@@ -239,6 +248,7 @@ overflow: hidden;
   width: 800px;
   height: 45px;
   top: 555px;
+  z-index: 5;
 
 
 }
@@ -253,7 +263,7 @@ overflow: hidden;
 
 
 #stage2 {
- position: fixed;
+ position: relative;
  background-color: #0066ff;
  margin: auto;
  width: 800px;

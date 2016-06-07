@@ -185,6 +185,11 @@ if (collisionBetween(p, $("#lavablocks3i"))) {
     alert("You lose!");
   }
 
+  if (collisionBetween(p, $("#lavablocks3s"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
 
 
 

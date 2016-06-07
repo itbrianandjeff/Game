@@ -396,9 +396,9 @@ overflow: hidden;
   z-index: 5;
 }
 #plat1c {
-  top: 375px;
-  left: 200px;
-  width: 50px;
+  top: 90px;
+  left: 240px;
+  width: 30px;
   z-index: 5;
 }
 #plat2c {
@@ -420,7 +420,7 @@ overflow: hidden;
   z-index: 5;
 }
 #plat5c {
-  top: 90px;
+  top: 400px;
   left: 290px;
   width: 30px;
   z-index: 5;
@@ -458,7 +458,7 @@ overflow: hidden;
 
 #lavablocks3a {
   position: relative;
-  top: 60px;
+  top: 30px;
   left: 290px;
 }
 

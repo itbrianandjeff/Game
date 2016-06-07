@@ -18,7 +18,7 @@ $(document).ready(function(e) {
   $("#player").css("top", "448px").css("left", "387.5px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
-  playerMaxTop = $("#stage2").height() - $("#player").height();
+  playerMaxTop = $("#stage3").height() - $("#player").height();
   // Start the timer
   timer = setInterval(update, 25);
   // Listen for keypresses
@@ -106,7 +106,7 @@ function update() {
   }
   // If the player goes right and is not on the right border allow moving
   if (rightPressed) {
-    p.css("left", Math.min(p.position().left + speed, $("#stage2").width() - p.width()) + "px");
+    p.css("left", Math.min(p.position().left + speed, $("#stage3").width() - p.width()) + "px");
   }
 
 };

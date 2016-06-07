@@ -81,7 +81,7 @@ function update() {
 
 
     if (collisionBetween(p, $("#goal"))) {
-    $("#next").show()
+    alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore2.html");
 
 
 }

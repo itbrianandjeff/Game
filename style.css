@@ -331,6 +331,7 @@ overflow: hidden;
   background-color: yellow;
   border-radius: 50%;
   z-index: 5;
+  
 }
 
 #lava2 {
@@ -359,8 +360,8 @@ overflow: hidden;
 
 #lavablocks2b {
   position: relative;
-  left: 400px;
-  top: 200px;
+  left: 370px;
+  top: 100px;
 }
 
 

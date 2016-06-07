@@ -15,7 +15,7 @@ var onPlatform = true;
 // This function runs when the page is loaded
 $(document).ready(function(e) {
   // Put the player in the top/middle of the screen
-  $("#player").css("top", "448px").css("left", "100px");
+  $("#player").css("top", "448px").css("left", "137.5px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
   playerMaxTop = $("#stage").height() - $("#player").height();
@@ -99,3 +99,7 @@ function collisionBetween(a, b) {
   var pos2 = $(b).position();
   return !(pos1.left > pos2.left + $(b).width() || pos2.left > pos1.left + $(a).width() || pos1.top > pos2.top + $(b).height() || pos2.top > pos1.top + $(a).height());
 }
+
+
+
+

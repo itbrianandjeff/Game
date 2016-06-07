@@ -270,12 +270,7 @@ overflow: hidden;
  height: 600px;
  overflow: hidden;
 }
-#player {
- background-color: red;
- position: absolute;
- width: 25px;
- height: 25px;
-}
+
 .platform2 {
   position: relative;
   height: 2px;
@@ -290,7 +285,7 @@ overflow: hidden;
   width: 300px;
   z-index: 5;
 }
-#plat1.2 {
+#plat1b {
   top: 375px;
   left: 150px;
   width: 100px;

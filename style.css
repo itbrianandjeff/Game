@@ -347,13 +347,14 @@ overflow: hidden;
     width: 45px;
   height: 45px;
   position: relative;
-  left: 50px;
+
 }
 
 
 #lavablocks2a {
   position: relative;
-  left: 50px;
+  left: 470px;
+  top: 240px;
 }
 
   <div id="lavablocks2a" class="lavablock"></div>

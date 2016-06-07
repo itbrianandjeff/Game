@@ -15,7 +15,7 @@ var onPlatform = true;
 // This function runs when the page is loaded
 $(document).ready(function(e) {
   // Put the player in the top/middle of the screen
-  $("#player").css("top", "20px").css("left", "387.5px");
+  $("#player").css("top", "30px").css("left", "387.5px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
   playerMaxTop = $("#stage4").height() - $("#player").height();
@@ -115,7 +115,7 @@ function update() {
   }
   // If the player goes right and is not on the right border allow moving
   if (rightPressed) {
-    p.css("left", Math.min(p.position().left + speed, $("#stage3").width() - p.width()) + "px");
+    p.css("left", Math.min(p.position().left + speed, $("#stage4").width() - p.width()) + "px");
   }
 
 };

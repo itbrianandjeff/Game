@@ -248,7 +248,7 @@ overflow: hidden;
   width: 800px;
   height: 45px;
   top: 555px;
-  
+
 
 
 }
@@ -356,6 +356,11 @@ overflow: hidden;
   z-index: -1;
 
 
+}
+
+#next {
+  width: 500px;
+  height: 500px;
 }
 
 

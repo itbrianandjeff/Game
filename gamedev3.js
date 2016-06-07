@@ -80,7 +80,7 @@ function update() {
 
 
 
-    if (collisionBetween(p, $("#goal2"))) {
+    if (collisionBetween(p, $("#goal3"))) {
     clearInterval(timer);
     alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore3.html");
 
@@ -90,7 +90,7 @@ function update() {
 
   
 
-  if (collisionBetween(p, $("#lava2"))) {
+  if (collisionBetween(p, $("#lava3"))) {
     clearInterval(timer);
     alert("You lose!");
   }

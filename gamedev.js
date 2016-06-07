@@ -76,7 +76,7 @@ function update() {
   }
   // GETTING THE GOAL
   if (collisionBetween(p, $("#goal"))) {
-    clearInterval(timer);
+
     alert("You win!");
   }
 

@@ -103,3 +103,42 @@ function collisionBetween(a, b) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
+        //if #myCar hits .othercar, then #results will say "TRUE"
+     $("#lava").hide();
+     $("#lose").show();
+        
+
+        //all the actions that happen during a collision go here
+   }
+
+      else {
+        $("#lose").hide();
+      }
+
+        //all the actions that happen during a collision go here
+
+      
+    });
+  }, 200);
+
+
+
+

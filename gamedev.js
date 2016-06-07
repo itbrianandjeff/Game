@@ -119,26 +119,6 @@ function collisionBetween(a, b) {
 
 
 
-$.each($('#lava'),  function() {
-
-if (collision($('#player'), $(this))) { //another if statement. If #myCar DOES hit something, the following will happen:
-        //if #myCar hits .othercar, then #results will say "TRUE"
-     $("#player, #lava, #stage").hide();
-     $("#lose").show();
-        
-
-        //all the actions that happen during a collision go here
-   }
-
-      else {
-        $("#lose").hide();
-      }
-
-        //all the actions that happen during a collision go here
-
-      
-    });
-  }, 200);
 
 
 

@@ -66,7 +66,7 @@ function update() {
   }
   if (velocity >= 0) { // only detect platforms when falling
     onPlatform = false;
-    $(".platform2").each(function(index) {
+    $(".platform3").each(function(index) {
       if (collisionBetween($(this), p) && p.position().top <= $(this).position().top) {
         p.css('top', $(this).position().top - p.height() + "px");
         onPlatform = true; // set player on a platform so that he can jump
@@ -80,7 +80,7 @@ function update() {
 
 
 
-    if (collisionBetween(p, $("#goal2"))) {
+    if (collisionBetween(p, $("#goal3"))) {
     clearInterval(timer);
     alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore3.html");
 
@@ -90,7 +90,7 @@ function update() {
 
   
 
-  if (collisionBetween(p, $("#lava2"))) {
+  if (collisionBetween(p, $("#lava3"))) {
     clearInterval(timer);
     alert("You lose!");
   }

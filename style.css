@@ -253,7 +253,7 @@ overflow: hidden;
 
 
 #stage2 {
- position: relative;
+ position: absolute;
  background-color: #0066ff;
  margin: auto;
  width: 800px;

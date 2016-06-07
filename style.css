@@ -234,10 +234,12 @@ overflow: hidden;
 }
 
 #lava {
+  position: absolute;
   background-image: url("img/lava.png");
   width: 800px;
   height: 45px;
   top: 100px;
+  
 
 }
 

@@ -374,7 +374,7 @@ overflow: hidden;
 
 #stage3 {
  position: relative;
- background-color: #00b3b3;
+ background-color: #002b80;
  margin: auto;
  width: 800px;
  height: 600px;
@@ -390,9 +390,9 @@ overflow: hidden;
   background-color: green;
 }
 #ground3 {
-  top: 448px;
-  left: 350px;
-  width: 100px;
+  top: 60px;
+  left: 375px;
+  width: 50px;
   z-index: 5;
 }
 #plat1c {
@@ -453,15 +453,14 @@ overflow: hidden;
 
 }
 
-.lavablock {
-  background-image: url("img/lava.png");
-    width: 45px;
-  height: 45px;
+
+
+
+#lavablocks3a {
   position: relative;
-
+  top: 60px;
+  left: 290px;
 }
-
-
 
 
 

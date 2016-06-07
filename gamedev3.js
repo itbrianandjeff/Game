@@ -15,7 +15,7 @@ var onPlatform = true;
 // This function runs when the page is loaded
 $(document).ready(function(e) {
   // Put the player in the top/middle of the screen
-  $("#player").css("top", "448px").css("left", "387.5px");
+  $("#player").css("top", "60px").css("left", "387.5px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
   playerMaxTop = $("#stage3").height() - $("#player").height();
@@ -90,7 +90,7 @@ function update() {
 
   
 
-  if (collisionBetween(p, $("#lava3"))) {
+  if (collisionBetween(p, $("#lava3, .lavablock"))) {
     clearInterval(timer);
     alert("You lose!");
   }

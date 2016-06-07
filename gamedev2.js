@@ -95,6 +95,12 @@ function update() {
     alert("You lose!");
   }
 
+  if (collisionBetween(p, $(".lavablock"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+
 
   // MOVEMENT HANDLING
   if (jumpPressed) {

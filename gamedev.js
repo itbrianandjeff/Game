@@ -75,7 +75,7 @@ function update() {
     });
   }
   // GETTING THE GOAL
-  if (collisionBetween(p, $("#goal"))) {
+  if (collisionBetween($("player"), $("#goal"))) {
     $(" #lava").hide();
   }
 

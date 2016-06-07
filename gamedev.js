@@ -84,12 +84,9 @@ function update() {
     $("#next").show()
 
 
+}
 
-    else {
-      $("next").hide()
-    }
 
-  }
   
 
   if (collisionBetween(p, $("#lava"))) {

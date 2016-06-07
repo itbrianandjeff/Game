@@ -1,5 +1,10 @@
-$( document ).ready(function() {
-
+$(document).ready(function(){
+    animateDiv1();
+    animateDiv2();
+    animateDiv3();
+    animateDiv4();
+    animateDiv5();
+    
 //Your jquery goes here
 var player = $("#player");
 
@@ -133,31 +138,6 @@ scroll.init();
 
 
 
-    animateDiv();
-
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() ;
-    var w = $(window).width() ;
-    
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
-}
-
-function animateDiv(){
-    var newq = makeNewPosition();
-  //James change .a to .othercar
-    $('#aa').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
-    });
-    
-};
-
- animateDiv();
 
 function makeNewPosition1(){
     
@@ -175,13 +155,14 @@ function makeNewPosition1(){
 function animateDiv1(){
     var newq = makeNewPosition();
   //James change .a to .othercar
-    $('#ab').animate({ top: newq[0], left: newq[1] }, function(){
+    $('#aa').animate({ top: newq[0], left: newq[1] }, function(){
       animateDiv();        
     });
     
 };
 
- animateDiv();
+
+
 
 function makeNewPosition2(){
     
@@ -199,13 +180,13 @@ function makeNewPosition2(){
 function animateDiv2(){
     var newq = makeNewPosition();
   //James change .a to .othercar
-    $('#ac').animate({ top: newq[0], left: newq[1] }, function(){
+    $('#ab').animate({ top: newq[0], left: newq[1] }, function(){
       animateDiv();        
     });
     
 };
 
- animateDiv();
+
 
 function makeNewPosition3(){
     
@@ -223,13 +204,13 @@ function makeNewPosition3(){
 function animateDiv3(){
     var newq = makeNewPosition();
   //James change .a to .othercar
-    $('#ad').animate({ top: newq[0], left: newq[1] }, function(){
+    $('#ac').animate({ top: newq[0], left: newq[1] }, function(){
       animateDiv();        
     });
     
 };
 
- animateDiv();
+
 
 function makeNewPosition4(){
     
@@ -247,19 +228,32 @@ function makeNewPosition4(){
 function animateDiv4(){
     var newq = makeNewPosition();
   //James change .a to .othercar
-    $('#ae').animate({ top: newq[0], left: newq[1] }, function(){
+    $('#ad').animate({ top: newq[0], left: newq[1] }, function(){
       animateDiv();        
     });
     
 };
 
 
-}); 
 
+function makeNewPosition5(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() ;
+    var w = $(window).width() ;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
 
-
- 
-
-
-
-
+function animateDiv5(){
+    var newq = makeNewPosition();
+  //James change .a to .othercar
+    $('#ae').animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv();        
+    });
+    
+};

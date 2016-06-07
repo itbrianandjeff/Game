@@ -53,17 +53,7 @@ overflow: hidden;
 
 }
 
-#player {
-  background-color: midnightblue;
 
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;  
-  position: relative;
-  top: 200px;
-  left: 200px;
-  
-}
 
 
 #instructionsBody {

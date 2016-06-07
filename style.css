@@ -176,7 +176,7 @@ overflow: hidden;
  height: 25px;
 }
 .platform {
-  position: absolute;
+  position: relative;
   height: 2px;
   background-color: #600;
 }

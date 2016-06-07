@@ -66,7 +66,7 @@ function update() {
   }
   if (velocity >= 0) { // only detect platforms when falling
     onPlatform = false;
-    $(".platform").each(function(index) {
+    $(".platform, .platform2").each(function(index) {
       if (collisionBetween($(this), p) && p.position().top <= $(this).position().top) {
         p.css('top', $(this).position().top - p.height() + "px");
         onPlatform = true; // set player on a platform so that he can jump
@@ -77,6 +77,7 @@ function update() {
   // GETTING THE GOAL
   if (collisionBetween(p, $("#goal"))) {
     $("#player").css("top", "448px").css("left", "387.5px");
+
   }
 
   if (collisionBetween(p, $("#lava"))) {

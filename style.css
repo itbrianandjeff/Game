@@ -179,36 +179,36 @@ overflow: hidden;
  width: 800px;
  height: 600px;
  overflow: hidden;
- z-index: -1;
+
 }
 #player2 {
  background-color: red;
  position: absolute;
  width: 25px;
  height: 25px;
- z-index: -1;
+
 }
 .platform2 {
   position: absolute;
   height: 2px;
   background-color: #600;
-  z-index: -1;
+
 }
 .onPlatform2 {
   background-color: green;
-  z-index: -1;
+
 }
 #ground2 {
   top: 448px;
   left: 250px;
   width: 300px;
-  z-index: -1;
+
 }
 #plat1.2 {
   top: 448px;
   left: 200px;
   width: 800px;
-  z-index: -1;
+
 }
 #plat2.2 {
   top: 300px;
@@ -220,31 +220,31 @@ overflow: hidden;
   top: 275px;
   left: 200px;
   width: 100px;
-  z-index: -1;
+
 }
 #plat4.2 {
   top: 190px;
   left: 75px;
   width: 100px;
-  z-index: -1;
+
 }
 #plat5.2 {
   top: 175px;
   left: 450px;
   width: 100px;
-  z-index: -1;
+
 }
 #plat6.2 {
   top: 125px;
   left: 600px;
   width: 100px;
-  z-index: -1;
+
 }
 #plat7.2 {
   top: 75px;
   left: 150px;
   width: 100px;
-  z-index: -1;
+
 }
 #goal2 {
   position: absolute;
@@ -254,7 +254,7 @@ overflow: hidden;
   height: 25px;
   background-color: yellow;
   border-radius: 50%;
-  z-index: -1;
+
 }
 
 #lava2 {
@@ -263,7 +263,7 @@ overflow: hidden;
   width: 800px;
   height: 45px;
   top: 555px;
-  z-index: -1;
+
 
 
 }

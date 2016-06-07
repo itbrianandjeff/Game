@@ -235,7 +235,8 @@ overflow: hidden;
 
 #lava {
   background-image: url("img/lava.png");
-
+  width: 100px;
+  height: 100px;
 }
 
 

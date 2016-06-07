@@ -1,3 +1,166 @@
+ #IndexBody{
+
+    background-size: cover;
+    background-color: black;
+	font-family: monospace;
+  background-image: url("img/titlescreen.png");
+  overflow: hidden;
+
+}
+
+
+
+/*Stuff below governs the start screen*/
+
+.titleContent {
+	margin: 10% auto;
+    text-align: center;
+}
+
+.splashTitle {
+	color: #800000;
+    font-size: 8em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(27, 25, 25, 0.74);
+}
+
+.button {
+	border: 5px solid #383838;
+    color: #383838;
+    padding: 20px 50px;
+    font-size: 5em;
+    text-decoration: none;
+    background-color: #abc;
+    box-shadow: 15px 15px 80px #555;
+    position: relative;
+    top:350px;
+}
+  a.button:hover {
+    background-color: #383838;
+    color: #abc;
+  }
+
+
+
+/*Stuff below governs the Explore screen*/
+
+#exploreBody {
+background-color: #0d0d0d;
+width:100%;
+height: 100%;
+overflow: hidden;
+
+
+}
+
+#player {
+  background-color: midnightblue;
+
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;  
+  position: relative;
+  top: 200px;
+  left: 200px;
+  
+}
+
+
+#instructionsBody {
+  background-image: url("img/instructions.png");
+  background-size: 95%;
+}
+
+
+#back {
+  position: absolute;
+  left: 900px;
+  bottom: 150px;
+}
+
+
+#instructionsbutton {
+  border: 5px solid #383838;
+    color: #383838;
+    padding: 20px 50px;
+    font-size: 5em;
+    text-decoration: none;
+    background-color: #abc;
+    position: relative;
+    height: 60px;
+    font-size: 400%;
+    font-family: monospace;
+
+}
+
+
+ a#instructionsbutton:hover {
+    background-color: #383838;
+    color: #abc;
+  }
+
+
+
+.arrow{
+    width: 100px;
+    height: 25px;
+    background-image: url("img/arrow.png");
+    background-size: contain;
+    position: relative;
+    right: 8px;
+    bottom: 35px;
+
+}
+
+
+
+
+.block {
+  background-image: url("img/arrow.png");
+}
+
+
+
+#b {
+    width: 15000px;
+    height: 25px;
+    background-image: url("img/block.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    right: 8px;
+    bottom: 35px;
+}
+
+
+#b2 {
+    width: 15000px;
+    height: 25px;
+    background-image: url("img/block.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    right: 8px;
+    top: 700px;
+}
+
+
+
+
+#lose{
+  background-image: url("img/lose.png");
+    width: 15000px;
+    height: 15000px;
+}
+
+
+
+
+
+
+
+
+
 #stage {
  position: relative;
  background-color: #3FF;
@@ -69,3 +232,6 @@
   background-color: yellow;
   border-radius: 50%;
 }
+
+
+

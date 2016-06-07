@@ -76,8 +76,7 @@ function update() {
   }
   // GETTING THE GOAL
   if (collisionBetween(p, $("#goal"))) {
-    clearInterval(timer);
-    alert("You win!");
+    $("#player").css("top", "448px").css("left", "387.5px");
   }
 
   if (collisionBetween(p, $("#lava"))) {

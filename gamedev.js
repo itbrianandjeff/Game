@@ -76,8 +76,8 @@ function update() {
   }
   // GETTING THE GOAL
   if (collisionBetween(p, $("#goal"))) {
-    alert("You passed this level!");
-
+    clearInterval(timer);
+    alert("You win!");
   }
 
   if (collisionBetween(p, $("#lava"))) {

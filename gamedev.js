@@ -156,7 +156,7 @@ function animateDiv1(){
     var newq = makeNewPosition();
   //James change .a to .othercar
     $('#aa').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
+      animateDiv1();        
     });
     
 };
@@ -181,7 +181,7 @@ function animateDiv2(){
     var newq = makeNewPosition();
   //James change .a to .othercar
     $('#ab').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
+      animateDiv2();        
     });
     
 };
@@ -205,7 +205,7 @@ function animateDiv3(){
     var newq = makeNewPosition();
   //James change .a to .othercar
     $('#ac').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
+      animateDiv3();        
     });
     
 };
@@ -229,7 +229,7 @@ function animateDiv4(){
     var newq = makeNewPosition();
   //James change .a to .othercar
     $('#ad').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
+      animateDiv4();        
     });
     
 };
@@ -253,7 +253,7 @@ function animateDiv5(){
     var newq = makeNewPosition();
   //James change .a to .othercar
     $('#ae').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
+      animateDiv5();        
     });
     
 };

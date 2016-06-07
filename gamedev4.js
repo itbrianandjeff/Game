@@ -15,7 +15,7 @@ var onPlatform = true;
 // This function runs when the page is loaded
 $(document).ready(function(e) {
   // Put the player in the top/middle of the screen
-  $("#player").css("top", "15px").css("left", "387.5px");
+  $("#player").css("top", "15px").css("left", "30px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
   playerMaxTop = $("#stage4").height() - $("#player").height();
@@ -82,7 +82,7 @@ function update() {
 
     if (collisionBetween(p, $("#goal4"))) {
     clearInterval(timer);
-    alert("You win this level! Go to this url for the next one: file:///Users/s210634/Desktop/Game/explore4.html");
+    alert("YYou won the game! Congrats! :)");
 
 
 }
@@ -99,6 +99,78 @@ function update() {
     clearInterval(timer);
     alert("You lose!");
   }
+
+  if (collisionBetween(p, $("#lavablocks4b"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4c"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4d"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4e"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4f"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4g"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4h"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4i"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4j"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4k"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4l"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4m"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4n"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+  if (collisionBetween(p, $("#lavablocks4o"))) {
+    clearInterval(timer);
+    alert("You lose!");
+  }
+
+
 
 
 

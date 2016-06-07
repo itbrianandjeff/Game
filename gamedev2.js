@@ -15,10 +15,10 @@ var onPlatform = true;
 // This function runs when the page is loaded
 $(document).ready(function(e) {
   // Put the player in the top/middle of the screen
-  $("#player").css("top", "448px").css("left", "387.5px");
+  $("#player2").css("top", "448px").css("left", "387.5px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
-  playerMaxTop = $("#stage2").height() - $("#player").height();
+  playerMaxTop = $("#stage2").height() - $("#player2").height();
   // Start the timer
   timer = setInterval(update, 25);
   // Listen for keypresses
@@ -55,7 +55,7 @@ function jump() {
 
 // This function controls the animation
 function update() {
-  var p = $("#player"); // store player jQuery object in a variable for convenience
+  var p = $("#player2"); // store player jQuery object in a variable for convenience
   // JUMP HANDLING
   if (!onPlatform) {
     // Update velocity if the player is in the air
@@ -66,7 +66,7 @@ function update() {
   }
   if (velocity >= 0) { // only detect platforms when falling
     onPlatform = false;
-    $(".platform, .platform2").each(function(index) {
+    $(".platform2").each(function(index) {
       if (collisionBetween($(this), p) && p.position().top <= $(this).position().top) {
         p.css('top', $(this).position().top - p.height() + "px");
         onPlatform = true; // set player on a platform so that he can jump
@@ -106,7 +106,7 @@ function update() {
   }
   // If the player goes right and is not on the right border allow moving
   if (rightPressed) {
-    p.css("left", Math.min(p.position().left + speed, $("#stage").width() - p.width()) + "px");
+    p.css("left", Math.min(p.position().left + speed, $("#stage2").width() - p.width()) + "px");
   }
 
 };

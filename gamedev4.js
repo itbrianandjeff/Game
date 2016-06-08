@@ -14,7 +14,7 @@ var onPlatform = true;
 
 // This function runs when the page is loaded
 $(document).ready(function(e) {
-  // Put the player in the top/middle of the screen
+  $("#win").hide();
   $("#player").css("top", "15px").css("left", "30px");
   // Calculate the player's "ground" position, which is the 
   // height of the stage minus the height of the player
@@ -82,7 +82,7 @@ function update() {
 
     if (collisionBetween(p, $("#goal4"))) {
     clearInterval(timer);
-    alert("YYou won the game! Congrats! :)");
+    $("#win").show();
 
 
 }

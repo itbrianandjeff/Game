@@ -755,6 +755,12 @@ overflow: hidden;
   left: 250px;
 }
 
+#win {
+    background-image: url("img/win.png");
+    width: 15000px;
+    height: 15000px;
+}
+
 
 
 
